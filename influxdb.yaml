@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: influxdb-v2
+spec:
+  containers:
+  - name: influxdb
+    image: quay.io/influxdb/influxdb:2.0.0-alpha
+    ports:
+    - containerPort: 9999
